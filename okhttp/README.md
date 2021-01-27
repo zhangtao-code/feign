@@ -5,7 +5,7 @@ This module directs Feign's http requests to [OkHttp](http://square.github.io/ok
 
 To use OkHttp with Feign, add the OkHttp module to your classpath. Then, configure Feign to use the OkHttpClient:
 
-```java
+```javad
 GitHub github = Feign.builder()
                      .client(new OkHttpClient())
                      .target(GitHub.class, "https://api.github.com");
